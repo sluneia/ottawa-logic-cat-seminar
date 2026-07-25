@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Logic and Category Theory Seminar</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Logic and Category Theory Seminar</h1>
+
+<p class="subtitle">
+University of Ottawa
+</p>
+
+</header>
+
+<main>
+
+<section class="intro">
+
+<p>
+
+The Logic and Category Theory Seminar brings together researchers
+working in category theory, logic, higher category theory,
+homotopy theory, type theory and neighboring areas.
+
+Everyone is welcome.
+
+</p>
+
+</section>
+
+<h2>Schedule</h2>
+
+<div class="timeline">
+
+<div class="event">
+
+<div class="date">
+September 18, 2026
+</div>
+
+<div class="card">
+
+<h3>Jane Doe (MIT)</h3>
+
+<h4>Monads and Homotopy Type Theory</h4>
+
+<p>
+
+Abstract goes here.
+
+</p>
+
+<p class="links">
+
+<a href="#">Speaker webpage</a>
+
+<a href="#">Slides</a>
+
+<a href="#">Recording</a>
+
+</p>
+
+</div>
+
+</div>
+
+<div class="event">
+
+<div class="date">
+October 2, 2026
+</div>
+
+<div class="card">
+
+<h3>John Smith (Oxford)</h3>
+
+<h4>Higher Operads</h4>
+
+<p>
+
+Abstract goes here.
+
+</p>
+
+<p class="links">
+
+<a href="#">Speaker webpage</a>
+
+<a href="#">Slides</a>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+© 2026 Logic and Category Theory Seminar
+
+</footer>
+
+</body>
+</html>
