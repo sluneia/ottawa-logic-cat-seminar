@@ -222,7 +222,7 @@ overflow:hidden;
 
 padding:18px 24px;
 
-font-size:1.25rem;
+font-size:2rem;
 
 font-weight:bold;
 
@@ -238,18 +238,16 @@ display:none;
 
 }
 
-.past-talks summary::before{
-
-content:"▶ ";
-
-transition:.2s;
-
+.past-talks summary::before {
+    content: "▶";
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 0.4rem;
+    transition: transform 0.2s ease;
 }
 
-.past-talks[open] summary::before{
-
-content:"▼ ";
-
+.past-talks[open] summary::before {
+    content: "▼";
 }
 
 .past-card{
