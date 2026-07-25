@@ -202,64 +202,43 @@ left:-29px;
 }
 
 }
-/* Accordion */
-
-.past-talks{
-
-margin:40px 0;
-
-background:#f6edd0;
-
-border-radius:16px;
-
-box-shadow:0 4px 12px rgba(0,0,0,.08);
-
-overflow:hidden;
-
+/* Past talks accordion */
+.accordion {
+  margin: 2rem 0 1.5rem 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #f8efd0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-.past-talks summary{
-
-padding:18px 24px;
-
-font-size:2rem;
-
-font-weight:bold;
-
-color: #1e1e2f;
-
-cursor:pointer;
-
-list-style:none;
-
+.accordion summary {
+  cursor: pointer;
+  list-style: none;
+  font-size: 2rem;          /* same size as "Next talk" */
+  font-weight: 700;
+  color: #1e2345;
+  padding: 1rem 1.5rem;     /* much less vertical padding */
 }
 
-.past-talks summary::-webkit-details-marker{
-
-display:none;
-
+.accordion summary::-webkit-details-marker {
+  display: none;
 }
 
-.past-talks summary::before {
-    content: "▶";
-    display: inline-block;
-    font-size: 1.2em;
-    margin-right: 0.4rem;
-    transition: transform 0.2s ease;
+/* Custom arrow */
+.accordion summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.7rem;
+  transition: transform 0.2s ease;
 }
 
-.past-talks[open] summary::before {
-    content: "▼";
+.accordion[open] summary::before {
+  transform: rotate(90deg);
 }
 
-.past-card{
-
-padding:0 24px 24px 24px;
-
-border-top:1px solid rgba(0,0,0,.08);
-
+.accordion-content {
+  padding: 0 1.5rem 1.5rem;
 }
-
 
 
 /* Highlight next talk */
