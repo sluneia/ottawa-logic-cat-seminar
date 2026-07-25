@@ -202,3 +202,72 @@ left:-29px;
 }
 
 }
+/* Accordion */
+
+.past-talks{
+
+margin:40px 0;
+
+background:#f6edd0;
+
+border-radius:16px;
+
+box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+overflow:hidden;
+
+}
+
+.past-talks summary{
+
+padding:18px 24px;
+
+font-size:1.25rem;
+
+font-weight:bold;
+
+cursor:pointer;
+
+list-style:none;
+
+}
+
+.past-talks summary::-webkit-details-marker{
+
+display:none;
+
+}
+
+.past-talks summary::before{
+
+content:"▶ ";
+
+transition:.2s;
+
+}
+
+.past-talks[open] summary::before{
+
+content:"▼ ";
+
+}
+
+.past-card{
+
+padding:0 24px 24px 24px;
+
+border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+
+
+/* Highlight next talk */
+
+.next{
+
+background:#efe2a7;
+
+border-left:6px solid #caa33d;
+
+}
