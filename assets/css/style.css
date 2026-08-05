@@ -22,7 +22,7 @@ header {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("../img/stem_complex_winter.jpg");
+        url("assets/images/stem_complex_winter.jpg");
 
     background-size: cover;
     background-position: center;
