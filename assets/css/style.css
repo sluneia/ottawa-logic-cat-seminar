@@ -13,30 +13,38 @@ line-height:1.7;
 
 }
 
-header{
+/* Header */
 
-padding:60px 20px;
+header {
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("../img/stem_complex_winter.jpg");
 
-text-align:center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
-background:#d8c18d;
+    color: white;
 
+    text-align: center;
+
+    padding: 7rem 2rem;
 }
 
-header h1{
-
-margin:0;
-
-font-size:3rem;
-
+header h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
-.subtitle{
-
-font-size:1.2rem;
-
-margin-top:10px;
-
+.subtitle {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
 }
 
 main{
