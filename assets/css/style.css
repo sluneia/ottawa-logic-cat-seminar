@@ -1,26 +1,22 @@
-html, body{
-
-margin:0;
-padding:0;
-
-font-family:Arial,sans-serif;
-
-background:#e8d8ad;
-
-color:#2f2b24;
-
-line-height:1.7;
-
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #e8d8ad;
+    color: #2f2b24;
+    line-height: 1.7;
 }
 
-/* Header */
+/* ===========================
+   Header
+   =========================== */
 
 header {
     position: relative;
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
         ),
         url("../images/stem_complex_winter.jpg");
 
@@ -29,7 +25,6 @@ header {
     background-repeat: no-repeat;
 
     color: white;
-
     text-align: center;
 
     padding: 7rem 2rem;
@@ -47,221 +42,213 @@ header h1 {
     font-weight: 400;
 }
 
-main{
-
-max-width:900px;
-
-margin:auto;
-
-padding:50px 30px;
-
+header::after {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 2px;
+    background: rgba(255,255,255,.8);
+    margin: 2rem auto 0 auto;
 }
 
-.intro{
+/* ===========================
+   Main
+   =========================== */
 
-font-size:1.15rem;
-
-margin-bottom:60px;
-
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 30px;
 }
 
-h2{
-
-margin-bottom:40px;
-
+.intro {
+    font-size: 1.15rem;
+    margin-bottom: 60px;
 }
 
-.timeline{
+/* ===========================
+   Section titles
+   =========================== */
 
-border-left:4px solid #a67c52;
-
-padding-left:35px;
-
-}
-
-.event{
-
-position:relative;
-
-margin-bottom:60px;
-
-}
-
-.event::before{
-
-content:"";
-
-position:absolute;
-
-left:-44px;
-
-top:10px;
-
-width:14px;
-
-height:14px;
-
-background:#a67c52;
-
-border-radius:50%;
-
-}
-
-.date{
-
-font-weight:bold;
-
-margin-bottom:15px;
-
-color:#7b5e3c;
-
-}
-
-.card{
-
-background:white;
-
-padding:25px;
-
-border-radius:12px;
-
-box-shadow:0 3px 10px rgba(0,0,0,.12);
-
-}
-
-.card h3{
-
-margin-top:0;
-
-margin-bottom:5px;
-
-}
-
-.card h4{
-
-margin-top:0;
-
-font-weight:normal;
-
-color:#5b4630;
-
-}
-
-.links{
-
-margin-top:20px;
-
-}
-
-.links a{
-
-margin-right:20px;
-
-text-decoration:none;
-
-color:#8b3a3a;
-
-font-weight:bold;
-
-}
-
-.links a:hover{
-
-color:#b84d4d;
-
-}
-
-footer{
-
-text-align:center;
-
-padding:30px;
-
-background:#d8c18d;
-
-margin-top:60px;
-
-}
-
-@media (max-width: 700px) {
-
-  header {
-    padding: 4rem 1.5rem;
-    background-position: center center;
-  }
-
-  header h1 {
-    font-size: 2.2rem;
+h2,
+.accordion summary {
+    font-size: 2rem;
+    font-weight: 700;
     line-height: 1.2;
-  }
-
-  .subtitle {
-    font-size: 1.1rem;
-    margin-top: 0.8rem;
-  }
-
-  main {
-    padding: 30px 20px;
-  }
-
-  .timeline {
-    padding-left: 20px;
-  }
-
-  .event::before {
-    left: -29px;
-  }
-
-  .card {
-    padding: 18px;
-  }
-
 }
-/* Past talks accordion */
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 40px;
+}
+
+/* ===========================
+   Timeline
+   =========================== */
+
+.timeline {
+    border-left: 4px solid #a67c52;
+    padding-left: 35px;
+}
+
+.event {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.event::before {
+    content: "";
+    position: absolute;
+    left: -44px;
+    top: 10px;
+    width: 14px;
+    height: 14px;
+    background: #a67c52;
+    border-radius: 50%;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #7b5e3c;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.12);
+}
+
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.card h4 {
+    margin-top: 0;
+    font-weight: normal;
+    color: #5b4630;
+}
+
+/* ===========================
+   Links
+   =========================== */
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #8b3a3a;
+    font-weight: bold;
+}
+
+.links a:hover {
+    color: #b84d4d;
+}
+
+/* ===========================
+   Past talks accordion
+   =========================== */
+
 .accordion {
-  margin: 2rem 0 1.5rem 0;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #f8efd0;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    margin: 2rem 0 1.5rem 0;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f8efd0;
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
 }
 
 .accordion summary {
-  cursor: pointer;
-  list-style: none;
-  font-size: 2rem;          /* same size as "Next talk" */
-  font-weight: 700;
-  color: #1e2345;
-  padding: 1rem 1.5rem;     /* much less vertical padding */
+    cursor: pointer;
+    list-style: none;
+    color: #1e2345;
+    padding: 1rem 1.5rem;
 }
 
 .accordion summary::-webkit-details-marker {
-  display: none;
+    display: none;
 }
 
-/* Custom arrow */
 .accordion summary::before {
-  content: "▶";
-  display: inline-block;
-  margin-right: 0.7rem;
-  transition: transform 0.2s ease;
+    content: "▶";
+    display: inline-block;
+    margin-right: .7rem;
+    font-size: .7em;
+    transition: transform .2s ease;
 }
 
 .accordion[open] summary::before {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .accordion-content {
-  padding: 0 1.5rem 1.5rem;
+    padding: 0 1.5rem 1.5rem;
 }
 
+/* ===========================
+   Highlight next talk
+   =========================== */
 
-/* Highlight next talk */
+.next {
+    background: #efe2a7;
+    border-left: 6px solid #caa33d;
+}
 
-.next{
+/* ===========================
+   Footer
+   =========================== */
 
-background:#efe2a7;
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #d8c18d;
+    margin-top: 60px;
+}
 
-border-left:6px solid #caa33d;
+/* ===========================
+   Mobile
+   =========================== */
+
+@media (max-width:700px) {
+
+    header {
+        padding: 4rem 1.5rem;
+        background-position: center center;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+        margin-top: .8rem;
+    }
+
+    main {
+        padding: 30px 20px;
+    }
+
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .event::before {
+        left: -29px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    h2,
+    .accordion summary {
+        font-size: 1.7rem;
+    }
 
 }
