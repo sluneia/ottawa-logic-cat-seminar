@@ -7,16 +7,16 @@ html, body {
     line-height: 1.7;
 }
 
-/* ===========================
-   Header
-   =========================== */
+/* ==========================================
+   HEADER
+========================================== */
 
 header {
     position: relative;
     background:
         linear-gradient(
-            rgba(0,0,0,0.45),
-            rgba(0,0,0,0.45)
+            rgba(0,0,0,.45),
+            rgba(0,0,0,.45)
         ),
         url("../images/stem_complex_winter.jpg");
 
@@ -38,7 +38,7 @@ header h1 {
 
 .subtitle {
     margin-top: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 400;
 }
 
@@ -51,9 +51,9 @@ header::after {
     margin: 2rem auto 0 auto;
 }
 
-/* ===========================
-   Main
-   =========================== */
+/* ==========================================
+   MAIN
+========================================== */
 
 main {
     max-width: 900px;
@@ -66,25 +66,94 @@ main {
     margin-bottom: 60px;
 }
 
-/* ===========================
-   Section titles
-   =========================== */
+/* ==========================================
+   SECTION TITLES
+========================================== */
 
 h2,
 .accordion summary {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.2;
+    color: #1e2345;
 }
 
 h2 {
-    margin-top: 2rem;
-    margin-bottom: 40px;
+    margin-top: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 
-/* ===========================
-   Timeline
-   =========================== */
+/* ==========================================
+   PAST TALKS ACCORDION
+========================================== */
+
+.accordion {
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #f8efd0;
+    box-shadow: 0 6px 18px rgba(0,0,0,.10);
+}
+
+.accordion summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 1rem 1.5rem;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::before {
+    content: "▶";
+    display: inline-block;
+    margin-right: .7rem;
+    font-size: .7em;
+    transition: transform .2s;
+}
+
+.accordion[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.accordion-content {
+    padding: 0 1.5rem 1.5rem;
+}
+
+/* Cards inside Past Talks */
+
+.past-card {
+    background: #fcf7e7;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.past-card h3 {
+    margin-top: 0;
+    margin-bottom: .35rem;
+}
+
+.past-card h4 {
+    margin: 0;
+    color: #5b4630;
+    font-weight: normal;
+}
+
+/* ==========================================
+   NEXT TALK
+========================================== */
+
+.next {
+    background: #efe2a7;
+    border-left: 6px solid #caa33d;
+}
+
+/* ==========================================
+   TIMELINE
+========================================== */
 
 .timeline {
     border-left: 4px solid #a67c52;
@@ -103,8 +172,8 @@ h2 {
     top: 10px;
     width: 14px;
     height: 14px;
-    background: #a67c52;
     border-radius: 50%;
+    background: #a67c52;
 }
 
 .date {
@@ -112,6 +181,8 @@ h2 {
     margin-bottom: 15px;
     color: #7b5e3c;
 }
+
+/* Upcoming talk cards */
 
 .card {
     background: white;
@@ -131,9 +202,9 @@ h2 {
     color: #5b4630;
 }
 
-/* ===========================
-   Links
-   =========================== */
+/* ==========================================
+   LINKS
+========================================== */
 
 .links {
     margin-top: 20px;
@@ -150,105 +221,56 @@ h2 {
     color: #b84d4d;
 }
 
-/* ===========================
-   Past talks accordion
-   =========================== */
-
-.accordion {
-    margin: 2rem 0 1.5rem 0;
-    border-radius: 18px;
-    overflow: hidden;
-    background: #f8efd0;
-    box-shadow: 0 6px 18px rgba(0,0,0,.12);
-}
-
-.accordion summary {
-    cursor: pointer;
-    list-style: none;
-    color: #1e2345;
-    padding: 1rem 1.5rem;
-}
-
-.accordion summary::-webkit-details-marker {
-    display: none;
-}
-
-.accordion summary::before {
-    content: "▶";
-    display: inline-block;
-    margin-right: .7rem;
-    font-size: .7em;
-    transition: transform .2s ease;
-}
-
-.accordion[open] summary::before {
-    transform: rotate(90deg);
-}
-
-.accordion-content {
-    padding: 0 1.5rem 1.5rem;
-}
-
-/* ===========================
-   Highlight next talk
-   =========================== */
-
-.next {
-    background: #efe2a7;
-    border-left: 6px solid #caa33d;
-}
-
-/* ===========================
-   Footer
-   =========================== */
+/* ==========================================
+   FOOTER
+========================================== */
 
 footer {
     text-align: center;
     padding: 30px;
-    background: #d8c18d;
     margin-top: 60px;
+    background: #d8c18d;
 }
 
-/* ===========================
-   Mobile
-   =========================== */
+/* ==========================================
+   MOBILE
+========================================== */
 
-@media (max-width:700px) {
+@media (max-width:700px){
 
-    header {
-        padding: 4rem 1.5rem;
-        background-position: center center;
+    header{
+        padding:4rem 1.5rem;
+        background-position:center;
     }
 
-    header h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
+    header h1{
+        font-size:2.2rem;
+        line-height:1.2;
     }
 
-    .subtitle {
-        font-size: 1.1rem;
-        margin-top: .8rem;
+    .subtitle{
+        font-size:1.1rem;
     }
 
-    main {
-        padding: 30px 20px;
-    }
-
-    .timeline {
-        padding-left: 20px;
-    }
-
-    .event::before {
-        left: -29px;
-    }
-
-    .card {
-        padding: 18px;
+    main{
+        padding:30px 20px;
     }
 
     h2,
-    .accordion summary {
-        font-size: 1.7rem;
+    .accordion summary{
+        font-size:1.35rem;
     }
 
+    .timeline{
+        padding-left:20px;
+    }
+
+    .event::before{
+        left:-29px;
+    }
+
+    .card,
+    .past-card{
+        padding:18px;
+    }
 }
