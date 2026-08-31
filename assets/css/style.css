@@ -182,7 +182,9 @@ h2 {
     color: #7b5e3c;
 }
 
-/* Upcoming talk cards */
+/* ==========================================
+   UPCOMING TALKS CARD
+========================================== */
 
 .card {
     background: white;
@@ -203,6 +205,22 @@ h2 {
 }
 
 /* ==========================================
+   TALK SOURCE COLORS
+========================================== */
+
+/* ItaCa Fest */
+.card.itaca,
+.past-card.itaca {
+    background: #e8ddf2;
+}
+
+/* Math + Stat Colloquium */
+.card.mathstat,
+.past-card.mathstat {
+    background: #dcecf2;
+}
+
+/* ==========================================
    LINKS
 ========================================== */
 
@@ -219,6 +237,20 @@ h2 {
 
 .links a:hover {
     color: #b84d4d;
+}
+
+/* Links in the introduction */
+
+.intro a {
+    color: #6f5a3c;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+.intro a:hover {
+    color: #4f3f2b;
 }
 
 /* ==========================================
