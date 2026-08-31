@@ -213,6 +213,30 @@ h2 {
 .past-card.itaca {
     background: #e8ddf2;
 }
+/* Individual talks inside an ItaCa Fest card */
+
+.itaca-talk {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(47, 43, 36, 0.15);
+}
+
+.itaca-talk:first-child {
+    padding-top: 0;
+}
+
+.itaca-talk:last-of-type {
+    border-bottom: none;
+}
+
+.itaca-talk h3 {
+    margin: 0 0 0.2rem 0;
+}
+
+.itaca-talk h4 {
+    margin: 0;
+    font-weight: normal;
+    color: #5b4630;
+}
 
 /* Math + Stat Colloquium */
 .card.mathstat,
@@ -235,7 +259,7 @@ h2 {
     top: 15px;
     right: 18px;
 
-    font-size: 0.85rem;
+    font-size: 1.17em;
     font-weight: 600;
 
     color: #536b78;
@@ -346,5 +370,6 @@ footer {
     .host {
         top: 12px;
         right: 15px;
+        font-size: 0.85rem;
     }
 }
