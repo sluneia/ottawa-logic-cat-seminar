@@ -221,6 +221,38 @@ h2 {
 }
 
 /* ==========================================
+   COLLOQUIUM LABEL
+========================================== */
+
+.card.mathstat,
+.past-card.mathstat {
+    position: relative;
+}
+
+/* Math + Stat Colloquium label */
+.host {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    color: #536b78;
+    text-decoration: none;
+}
+
+.host:hover {
+    color: #344a56;
+    text-decoration: underline;
+}
+
+.card.mathstat h3,
+.past-card.mathstat h3 {
+    padding-right: 180px;
+}
+
+/* ==========================================
    LINKS
 ========================================== */
 
@@ -304,5 +336,15 @@ footer {
     .card,
     .past-card{
         padding:18px;
+    }
+    .card.mathstat h3,
+    .past-card.mathstat h3 {
+        padding-right: 0;
+        padding-top: 1.8rem;
+    }
+
+    .host {
+        top: 12px;
+        right: 15px;
     }
 }
