@@ -150,6 +150,11 @@ h2 {
     background: #efe2a7;
     border-left: 6px solid #caa33d;
 }
+.next-date {
+    color: #5f5b54;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
 
 /* ==========================================
    TIMELINE
