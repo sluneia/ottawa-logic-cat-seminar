@@ -250,11 +250,13 @@ h2 {
 }
 
 /* ==========================================
-   COLLOQUIUM LABEL
+   EXTERNAL COLLOQUIUM LABEL
 ========================================== */
 
 .card.mathstat,
-.past-card.mathstat {
+.past-card.mathstat,
+.card.itaca,
+.past-card.itaca {
     position: relative;
 }
 
@@ -274,6 +276,16 @@ h2 {
 .host:hover {
     color: #344a56;
     text-decoration: underline;
+}
+
+.card.itaca .host,
+.past-card.itaca .host {
+    color: #68527a;
+}
+
+.card.itaca .host:hover,
+.past-card.itaca .host:hover {
+    color: #493957;
 }
 
 .card.mathstat h3,
