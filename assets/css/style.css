@@ -203,6 +203,13 @@ h2 {
     margin-bottom: 5px;
 }
 
+.institution {
+    font-size: 0.85em;
+    font-weight: 400;
+    color: #6b665e;
+    margin-left: 0.5rem;
+}
+
 .card h4 {
     margin-top: 0;
     font-weight: normal;
