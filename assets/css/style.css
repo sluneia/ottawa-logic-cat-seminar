@@ -333,6 +333,19 @@ h2 {
     color: #4f3f2b;
 }
 
+/* Speaker webpage links */
+
+.speaker-link,
+.speaker-link:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.speaker-link:hover {
+    color: #8b3a3a;
+    text-decoration: none;
+}
+
 /* ==========================================
    FOOTER
 ========================================== */
