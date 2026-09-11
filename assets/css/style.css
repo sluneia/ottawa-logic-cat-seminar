@@ -156,6 +156,14 @@ h2 {
     margin-bottom: 0.6rem;
 }
 
+.talk-location {
+    color: #6b665e;
+    font-size: 0.95rem;
+    font-weight: 400;
+    margin-top: -0.3rem;
+    margin-bottom: 1rem;
+}
+
 /* ==========================================
    TIMELINE
 ========================================== */
