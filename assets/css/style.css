@@ -190,9 +190,15 @@ h2 {
 }
 
 .date {
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-weight: 700;
     margin-bottom: 15px;
     color: #7b5e3c;
+}
+
+.date .time {
+    font-size: 0.9em;
+    font-weight: 500;
 }
 
 /* ==========================================
@@ -363,6 +369,15 @@ footer {
     padding: 30px;
     margin-top: 60px;
     background: #d8c18d;
+}
+
+/* ==========================================
+   SYMBOLS
+========================================== */
+
+.math-symbol {
+    font-family: "Cambria Math", "Times New Roman", serif;
+    font-size: 1.05em;
 }
 
 /* ==========================================
