@@ -164,6 +164,13 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.talk-info {
+    margin: 0 0 0.8rem 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #6b665e;
+}
+
 /* ==========================================
    TIMELINE
 ========================================== */
