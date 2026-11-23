@@ -277,6 +277,13 @@ h2 {
     background: #dcecf2;
 }
 
+/* Thesis Defense */
+.card.thesis,
+.past-card.thesis {
+    background: #f1d6d4;
+}
+
+
 /* ==========================================
    EXTERNAL COLLOQUIUM LABEL
 ========================================== */
@@ -284,7 +291,9 @@ h2 {
 .card.mathstat,
 .past-card.mathstat,
 .card.itaca,
-.past-card.itaca {
+.past-card.itaca,
+.card.thesis,
+.past-card.thesis {
     position: relative;
 }
 
@@ -321,6 +330,22 @@ h2 {
     padding-right: 180px;
 }
 
+/* Thesis Defense label */
+.card.thesis .host,
+.past-card.thesis .host {
+    color: #8a4f4f;
+}
+
+.card.thesis .host:hover,
+.past-card.thesis .host:hover {
+    color: #8a4f4f;
+    text-decoration: none;
+}
+
+.card.thesis h3,
+.past-card.thesis h3 {
+    padding-right: 150px;
+}
 /* ==========================================
    LINKS
 ========================================== */
@@ -429,7 +454,9 @@ footer {
         padding:18px;
     }
     .card.mathstat h3,
-    .past-card.mathstat h3 {
+    .past-card.mathstat h3,
+    .card.thesis h3,
+    .past-card.thesis h3 {
         padding-right: 0;
         padding-top: 1.8rem;
     }
